@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+:root{--bg:#f5f7fb;--card:#ffffff;--accent:#4f46e5;--muted:#6b7280}
+html,body{height:100%}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#eef2ff 0%,#fff 100%);margin:0;padding:24px}
+.app{width:100%;max-width:640px;background:var(--card);padding:28px;border-radius:12px;box-shadow:0 6px 24px rgba(15,23,42,0.08)}
+h1{margin:0 0 18px 0;font-size:1.5rem;color:#111827}
+.task-form{display:flex;gap:8px;margin-bottom:16px}
+.task-form input{flex:1;padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;font-size:1rem}
+.task-form button{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+.controls{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.filters button{background:transparent;border:none;padding:6px 8px;border-radius:6px;cursor:pointer;color:var(--muted)}
+.filters button.active{background:rgba(79,70,229,0.08);color:var(--accent)}
+.actions{display:flex;align-items:center;gap:12px;color:var(--muted)}
+.task-list{list-style:none;padding:0;margin:0}
+.task-item{display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;border:1px solid #f0f2f7;margin-bottom:8px}
+.task-item .title{flex:1}
+.task-item.completed .title{text-decoration:line-through;color:#9ca3af}
+.btn-icon{background:transparent;border:none;cursor:pointer;color:var(--muted)}
+.btn-icon:hover{color:#111827}
+.edit-input{flex:1;padding:8px;border:1px solid #e6e9ef;border-radius:6px}
+.credits{margin-top:16px;font-size:0.85rem;color:var(--muted);text-align:center}
+@media (max-width:480px){.app{padding:18px}}
